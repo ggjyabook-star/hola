@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="media/logo-kc.png">
+<meta property="og:title" content="KC Venta de Terrenos">
+<meta property="og:description" content="Lotes de 8 × 15 m a 5 minutos del Circuito Exterior Mexiquense. Precio $350,000 con $15,000 de enganche y mensualidades congeladas de $3,000.">
+<meta property="og:type" content="website">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>KC Venta de Terrenos</title>
+<meta name="description" content="KC Venta de Terrenos: lotes de 8 × 15 m a 5 minutos del Circuito Exterior Mexiquense. Recorre el terreno en video y agenda tu visita por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: forest bar → full-bleed cinematic hero, serif headline lower-left → white ledger card overlapping the hero edge → property copy beside a listing card → forest video tour → editorial photo grid → full-bleed photo call to action → location beside the access-road image → forest booking band with a white form card → deep-forest footer.
+   One deliberate light theme with dark forest bands (brand colors: forest green, white, discreet gold). */
+:root{
+  --forest:#0F2A1F;
+  --forest-deep:#0A1F16;
+  --forest-soft:#1A3D2E;
+  --white:#FFFFFF;
+  --mist:#F3F5F1;
+  --ink:#142219;
+  --muted:#5D6962;
+  --line:#E1E6DF;
+  --field:#8F9A92;
+  --gold:#CFA552;
+  --gold-soft:#EBCB8B;
+  --gold-ink:#8A6424;
+  --on-dark:#FFFFFF;
+  --on-dark-muted:rgba(255,255,255,.76);
+  --line-dark:rgba(255,255,255,.16);
+  --gold-line:rgba(207,165,82,.32);
+  --screen:#06140D;
+  --serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --sans:"Jost","Futura","Century Gothic","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --focus:var(--gold-ink);
+  --header-h:64px;
+}
+@media (min-width:1080px){:root{--header-h:80px}}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--header-h) + 12px)}
+body{background:var(--white);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,video{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.on-dark{--focus:var(--gold)}
+
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+@media (min-width:768px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+@media (min-width:1200px){.wrap{padding-left:max(56px,env(safe-area-inset-left,0px));padding-right:max(56px,env(safe-area-inset-right,0px))}}
+
+.section{padding-block:clamp(84px,11vw,144px)}
+
+/* type */
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 .75rem/1.3 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink)}
+.eyebrow::before{content:"";width:32px;height:1px;background:currentColor;flex:none}
+.on-dark .eyebrow{color:var(--gold)}
+.h2{font-size:clamp(2.3rem,4.6vw,3.75rem)}
+.lead{font-size:clamp(1.0625rem,1.5vw,1.1875rem);line-height:1.65}
+.muted{color:var(--muted)}
+.on-dark .muted{color:var(--on-dark-muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 28px;border:1px solid transparent;border-radius:2px;font:500 .78rem/1.25 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;flex:none}
+@media (max-width:400px){.btn{gap:10px;padding:0 18px;letter-spacing:.14em}}
+@media (max-width:340px){.btn{padding:0 12px;letter-spacing:.1em}}
+.btn-light{background:var(--white);color:var(--forest)}
+.btn-light svg{color:var(--gold-ink)}
+.btn-light:hover{background:var(--gold-soft)}
+.btn-ghost-light{background:rgba(10,31,22,.18);border-color:rgba(255,255,255,.62);color:var(--white)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
+.btn-forest{background:var(--forest);color:var(--white)}
+.btn-forest svg{color:var(--gold)}
+.btn-forest:hover{background:var(--forest-soft)}
+.btn-line{background:transparent;border-color:var(--forest);color:var(--forest)}
+.btn-line:hover{background:var(--forest);color:var(--white)}
+.link-arrow{display:inline-flex;align-items:center;gap:12px;justify-self:start;padding:0 0 8px;border:0;border-bottom:1px solid var(--gold);background:none;font:500 .78rem/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--forest);text-decoration:none;cursor:pointer}
+.link-arrow svg{width:16px;height:16px;transition:transform .25s}
+.link-arrow:hover svg{transform:translateX(4px)}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--forest-deep);color:var(--on-dark);border-bottom:1px solid var(--gold-line)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--header-h)}
+.brand{display:inline-flex;align-items:center;gap:12px;min-width:0;color:var(--on-dark);text-decoration:none}
+.brand img{width:52px;height:52px;flex:none;object-fit:contain}
+@media (min-width:1080px){.bar .brand img{width:64px;height:64px}}
+.brand-name{display:grid;gap:7px;line-height:1}
+.brand-name b{font:600 1.55rem/1 var(--serif);letter-spacing:.16em;text-transform:uppercase}
+.brand-name small{font:500 .6rem/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+@media (max-width:419px){.bar .brand-name{display:none}}
+.nav{display:none;align-items:center;gap:32px}
+.nav a{padding-block:8px;border-bottom:1px solid transparent;font:500 .72rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted);text-decoration:none;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--white);border-bottom-color:var(--gold)}
+.bar-actions{display:flex;align-items:center;gap:10px}
+.bar .btn{min-height:44px;padding:0 18px;font-size:.7rem}
+.bar .btn-book{display:none}
+.menu-btn{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid var(--line-dark);border-radius:2px;background:transparent;color:var(--white);cursor:pointer}
+.menu-btn svg{width:20px;height:20px}
+@media (min-width:1080px){.nav{display:flex}.bar .btn-book{display:inline-flex}.menu-btn{display:none}}
+@media (max-width:479px){.bar .btn-wa{width:44px;padding:0}.bar .btn-wa span{display:none}}
+.mnav{position:absolute;left:0;right:0;top:100%;background:var(--forest-deep);border-bottom:1px solid var(--gold-line);box-shadow:0 30px 40px -20px rgba(0,0,0,.5)}
+.mnav .wrap{padding-block:6px 24px}
+.mnav a.mlink{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line-dark);font:500 .8rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--white);text-decoration:none}
+.mnav a.mlink svg{width:16px;height:16px;color:var(--gold)}
+.mnav .btn{width:100%;margin-top:22px}
+
+/* hero */
+.hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:620px;min-height:clamp(580px,calc(100svh - var(--header-h)),900px);overflow:hidden;background:var(--forest);color:var(--on-dark)}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media video{opacity:0;transition:opacity 1.2s ease}
+.hero-media video.is-playing{opacity:1}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(10,31,22,.5) 0%,rgba(10,31,22,0) 20%),
+  linear-gradient(0deg,rgba(10,31,22,.96) 0%,rgba(10,31,22,.88) 46%,rgba(10,31,22,.7) 68%,rgba(10,31,22,.42) 86%,rgba(10,31,22,.3) 100%)}
+@media (min-width:900px){.hero::before{background:
+  linear-gradient(180deg,rgba(10,31,22,.5) 0%,rgba(10,31,22,0) 22%),
+  linear-gradient(90deg,rgba(10,31,22,.93) 0%,rgba(10,31,22,.74) 34%,rgba(10,31,22,.22) 64%,rgba(10,31,22,.06) 100%),
+  linear-gradient(0deg,rgba(10,31,22,.6) 0%,rgba(10,31,22,0) 36%)}}
+.hero-tag-row{position:absolute;top:22px;left:0;right:0;display:flex;justify-content:flex-end;pointer-events:none}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;padding:9px 13px;border:1px solid rgba(255,255,255,.22);background:rgba(10,31,22,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font:500 .66rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--white)}
+.hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero-in{position:relative;padding-block:120px 96px}
+@media (min-width:900px){.hero-in{padding-block:150px 172px}}
+.hero-copy{display:grid;gap:24px;max-width:660px}
+.hero .eyebrow{color:var(--gold-soft)}
+@media (max-width:559px){.hero .eb-extra{display:none}}
+.hero h1{font-size:clamp(2.85rem,6.6vw,5.6rem);line-height:.98;color:var(--white)}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero-sub{max-width:33em;font-size:clamp(1.0625rem,1.6vw,1.25rem);line-height:1.6;color:var(--on-dark-muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+@media (max-width:559px){.hero-actions .btn{width:100%}}
+.hero-contact{font:500 .72rem/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted)}
+.hero-contact b{font-weight:500;color:var(--white);letter-spacing:.14em}
+
+/* ledger */
+.ledger{position:relative;z-index:2;margin-top:-56px}
+@media (min-width:900px){.ledger{margin-top:-92px}}
+.ledger-card{background:var(--white);box-shadow:0 34px 70px -34px rgba(10,31,22,.42),0 2px 8px rgba(10,31,22,.06)}
+.ledger-head{padding:24px 20px 18px}
+.ledger-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr}
+.ledger-list li{display:grid;gap:6px;align-content:start;min-width:0;padding:22px 20px 26px;border-top:1px solid var(--line)}
+.ledger-list li:nth-child(even){border-left:1px solid var(--line)}
+.ledger-list svg{width:28px;height:28px;margin-bottom:8px;color:var(--gold-ink)}
+.ledger-list b{font:600 1.3rem/1.15 var(--serif);color:var(--ink)}
+.ledger-list span{font-size:.92rem;line-height:1.5;color:var(--muted)}
+@media (max-width:599px){
+  .ledger-list{grid-template-columns:1fr}
+  .ledger-list li{grid-template-columns:40px minmax(0,1fr);column-gap:16px;row-gap:4px;padding:20px 20px 22px}
+  .ledger-list li:nth-child(even){border-left:0}
+  .ledger-list svg{grid-row:1 / span 2;margin:2px 0 0}
+}
+@media (min-width:900px){
+  .ledger-head{padding:30px 36px 22px}
+  .ledger-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .ledger-list li{padding:30px 30px 34px}
+  .ledger-list li + li{border-left:1px solid var(--line)}
+  .ledger-list b{font-size:1.4rem}
+}
+
+/* property */
+.prop{display:grid;gap:52px}
+@media (min-width:1024px){.prop{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px;align-items:center}}
+.prop-copy{display:grid;gap:24px;max-width:520px;min-width:0}
+.listing{min-width:0;background:var(--white);border:1px solid var(--line);box-shadow:0 46px 90px -52px rgba(10,31,22,.5)}
+.listing-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--forest)}
+.listing-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:16px;left:16px;padding:10px 14px;border:1px solid rgba(207,165,82,.7);background:var(--forest);font:500 .66rem/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--white)}
+.media-chip{position:absolute;right:16px;bottom:16px;display:inline-flex;align-items:center;gap:8px;padding:9px 12px;background:rgba(10,31,22,.74);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);font:500 .66rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--white)}
+.media-chip svg{width:12px;height:12px;color:var(--gold)}
+.listing-body{display:grid;gap:24px;padding:clamp(20px,3.6vw,40px)}
+.listing-title{display:grid;gap:10px}
+.listing-title h3{font-size:clamp(1.85rem,2.8vw,2.4rem);font-weight:600}
+.listing-loc{display:flex;align-items:center;gap:8px;font-size:.95rem;line-height:1.4;color:var(--muted)}
+.listing-loc svg{width:16px;height:16px;flex:none;color:var(--gold-ink)}
+.price{display:grid;gap:8px;padding:18px 20px 20px;border:1px solid var(--line);background:var(--mist)}
+.price-label{font:500 .66rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.price-value{font:600 clamp(2.2rem,3.6vw,2.75rem)/1 var(--serif);font-variant-numeric:lining-nums;letter-spacing:.01em;color:var(--forest)}
+.price-value small{margin-left:6px;font:500 .7rem/1 var(--sans);letter-spacing:.2em;color:var(--muted)}
+.spec{display:grid;grid-template-columns:1fr 1fr;margin:0;border-top:1px solid var(--line)}
+.spec div{display:grid;gap:5px;align-content:start;min-width:0;padding:16px 0;border-bottom:1px solid var(--line)}
+.spec div:nth-child(odd){padding-right:16px}
+.spec div:nth-child(even){padding-left:18px;border-left:1px solid var(--line)}
+.spec dt{font:500 .66rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.spec dd{margin:0;font:500 1rem/1.4 var(--sans);color:var(--ink)}
+.spec dd a{color:var(--forest);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:1px;text-underline-offset:4px}
+.listing-actions{display:grid;gap:12px}
+.listing-actions .btn{width:100%}
+
+/* video tour */
+.dark{background:var(--forest);color:var(--on-dark);color-scheme:dark}
+.sec-head{display:grid;gap:20px;margin-bottom:clamp(40px,5vw,60px)}
+.sec-head .h2{max-width:14em}
+@media (min-width:1024px){.sec-head.split{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:end}.sec-head.split > p{justify-self:end;max-width:30em}}
+.sec-head-title{display:grid;gap:20px}
+.tour{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:1200px){.tour{grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:start}}
+.player,.tour-list{min-width:0}
+.screen{position:relative;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:var(--screen);box-shadow:0 44px 80px -44px rgba(0,0,0,.7)}
+.screen video{width:100%;height:100%;object-fit:contain;background:var(--screen)}
+.now{display:grid;gap:10px;margin-top:22px}
+.now-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font:500 .7rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.now-top span:last-child{color:var(--on-dark-muted);letter-spacing:.1em;font-variant-numeric:tabular-nums}
+.now h3{font-size:clamp(1.7rem,2.8vw,2.2rem);color:var(--white)}
+.now p{max-width:44em;color:var(--on-dark-muted)}
+.playlist{position:relative;list-style:none;margin:0;padding:0 0 12px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;min-width:0}
+.playlist li{flex:0 0 clamp(220px,64vw,272px);scroll-snap-align:start}
+.clip{display:grid;align-content:start;gap:14px;width:100%;height:100%;padding:10px 10px 16px;border:1px solid var(--line-dark);border-radius:0;background:transparent;color:var(--white);font:inherit;text-align:left;cursor:pointer;transition:background-color .2s,border-color .2s}
+.clip:hover{background:var(--forest-soft)}
+.clip[aria-current="true"]{background:var(--forest-soft);border-color:rgba(207,165,82,.75)}
+.thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--screen)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb .dur{position:absolute;right:6px;bottom:6px;padding:5px 7px;background:rgba(6,20,13,.84);font:500 .68rem/1 var(--sans);letter-spacing:.06em;color:var(--white);font-variant-numeric:tabular-nums}
+.thumb .vert{position:absolute;left:6px;top:6px;padding:5px 7px;border:1px solid rgba(207,165,82,.55);background:rgba(6,20,13,.84);font:500 .6rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+.clip-text{display:grid;gap:5px;min-width:0;padding-inline:4px}
+.clip-num{font:500 .66rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.clip-text b{font:500 1rem/1.3 var(--sans);color:var(--white)}
+.clip-text .desc{font-size:.86rem;line-height:1.45;color:var(--on-dark-muted)}
+.swipe-hint{margin-top:6px;font:500 .66rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--on-dark-muted)}
+@media (min-width:1200px){
+  .playlist{flex-direction:column;gap:6px;overflow:visible;scroll-snap-type:none;padding:0}
+  .playlist li{flex:none}
+  .clip{grid-template-columns:112px minmax(0,1fr);align-items:center;gap:16px;padding:8px;border-color:transparent}
+  .clip:hover{border-color:var(--line-dark)}
+  .clip[aria-current="true"]{border-color:rgba(207,165,82,.75)}
+  .clip-text{padding-inline:0}
+  .clip-text .desc{display:none}
+  .swipe-hint{display:none}
+}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.shot{position:relative;display:block;width:100%;padding:0;border:0;overflow:hidden;background:var(--mist);color:var(--white);cursor:zoom-in}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.shot:hover img{transform:scale(1.04)}
+.shot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(0deg,rgba(10,31,22,.72),rgba(10,31,22,0));pointer-events:none}
+.shot-cap{position:absolute;left:14px;right:14px;bottom:13px;z-index:1;font:500 .64rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-align:left}
+.g-a{grid-column:1 / -1;aspect-ratio:4/3}
+.g-b,.g-e{aspect-ratio:3/4}
+.g-c,.g-f{grid-column:1 / -1;aspect-ratio:16/9}
+@media (min-width:768px){
+  .gallery{grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(170px,21vw,290px);gap:14px}
+  .g-a,.g-b,.g-c,.g-e,.g-f{aspect-ratio:auto}
+  .g-a{grid-column:1 / 9;grid-row:1 / 3}
+  .g-b{grid-column:9 / 13;grid-row:1 / 3}
+  .g-e{grid-column:1 / 5;grid-row:3 / 5}
+  .g-c{grid-column:5 / 13;grid-row:3 / 4}
+  .g-f{grid-column:5 / 13;grid-row:4 / 5}
+  .shot-cap{left:20px;bottom:18px;font-size:.68rem}
+}
+
+/* lightbox */
+.lb{width:min(94vw,1400px);max-width:none;max-height:none;padding:0;border:0;background:transparent;color:var(--white);overflow:visible}
+.lb::backdrop{background:rgba(6,20,13,.92)}
+.lb figure{display:grid;gap:14px;margin:0}
+.lb img{width:100%;max-height:80vh;object-fit:contain}
+.lb figcaption{font:500 .7rem/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-align:center;color:rgba(255,255,255,.82)}
+.lb-close{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px));display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid rgba(255,255,255,.4);border-radius:2px;background:rgba(6,20,13,.6);color:var(--white);cursor:pointer}
+.lb-close svg{width:20px;height:20px}
+
+/* call to action band */
+.band{position:relative;isolation:isolate;overflow:hidden;background:var(--forest);color:var(--on-dark)}
+.band-media{position:absolute;inset:0;z-index:-2}
+.band-media img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(10,31,22,.92) 0%,rgba(10,31,22,.62) 100%)}
+@media (min-width:900px){.band::before{background:linear-gradient(90deg,rgba(10,31,22,.92) 0%,rgba(10,31,22,.7) 42%,rgba(10,31,22,.2) 100%)}}
+.band-in{padding-block:clamp(100px,13vw,170px)}
+.band-copy{display:grid;gap:22px;max-width:600px}
+.band-copy .h2{color:var(--white)}
+.band-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+@media (max-width:559px){.band-actions .btn{width:100%}}
+
+/* location */
+.mist{background:var(--mist)}
+.loc{display:grid;gap:48px}
+@media (min-width:1024px){.loc{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px;align-items:center}}
+.loc-copy{display:grid;gap:24px;max-width:520px;min-width:0}
+.loc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:6px}
+.access{display:grid;gap:8px;min-width:0;padding:clamp(24px,3.6vw,44px);border:1px solid var(--line);background:var(--white);box-shadow:0 40px 80px -52px rgba(10,31,22,.45)}
+.access-list{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+.access-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.access-list svg{width:30px;height:30px;color:var(--gold-ink)}
+.access-list div{display:grid;gap:4px;min-width:0}
+.access-list b{font:600 clamp(1.35rem,2.2vw,1.6rem)/1.15 var(--serif);color:var(--ink)}
+.access-list span{font-size:.95rem;color:var(--muted)}
+
+/* booking */
+.book-band{background:var(--forest)}
+.book{display:grid;gap:56px}
+@media (min-width:1024px){.book{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:80px;align-items:start}}
+.book-copy{display:grid;gap:24px;min-width:0}
+.book-copy .h2{color:var(--white)}
+.steps{list-style:none;margin:8px 0 0;padding:0;counter-reset:step;border-top:1px solid var(--line-dark)}
+.steps li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:20px 0;border-bottom:1px solid var(--line-dark)}
+.steps li::before{counter-increment:step;content:counter(step);font:500 2.4rem/.9 var(--serif);font-variant-numeric:lining-nums;color:var(--gold)}
+.steps b{display:block;font-weight:500;font-size:1.0625rem;color:var(--white)}
+.steps span{font-size:.95rem;color:var(--on-dark-muted)}
+.contact{display:grid;gap:12px;margin-top:8px}
+.contact-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.contact output{font:500 clamp(2.1rem,3.6vw,2.6rem)/1 var(--serif);font-variant-numeric:lining-nums;letter-spacing:.02em;color:var(--white);-webkit-user-select:all;user-select:all}
+.contact .btn{min-height:44px;padding:0 18px;font-size:.68rem}
+.form-card{display:grid;gap:22px;min-width:0;padding:clamp(24px,4vw,48px);background:var(--white);color:var(--ink);color-scheme:light;--focus:var(--gold-ink);box-shadow:0 46px 90px -46px rgba(0,0,0,.6)}
+.form-head{display:grid;gap:8px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.form-head h3{font-size:clamp(1.8rem,2.6vw,2.1rem);font-weight:600}
+.form-head p{font-size:.95rem;color:var(--muted)}
+.field{display:grid;gap:9px;min-width:0}
+.field label,.field .label{font:500 .7rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.field small{font-size:.7rem;letter-spacing:.08em;text-transform:none;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;min-height:54px;padding:.8rem 1rem;border:1px solid var(--field);border-radius:2px;background:var(--white);color:var(--ink);font:400 1rem/1.4 var(--sans)}
+.field textarea{min-height:112px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#7D8981}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 3px rgba(15,42,31,.16)}
+.two{display:grid;gap:22px}
+@media (min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.preview{padding:14px 16px;border:1px solid var(--line);background:var(--mist);font:400 .9rem/1.6 var(--sans);color:var(--muted);white-space:pre-wrap;overflow-wrap:anywhere}
+.form-card .btn{width:100%;min-height:58px;font-size:.8rem}
+.fine{font-size:.86rem;text-align:center;color:var(--muted)}
+
+/* footer */
+.foot{padding-block:72px 40px;border-top:1px solid var(--gold-line);background:var(--forest-deep);color:var(--on-dark-muted);color-scheme:dark}
+.foot-grid{display:grid;gap:44px}
+@media (min-width:768px){.foot-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:56px}}
+.foot-brand{display:grid;gap:20px;max-width:360px}
+.foot-logo{justify-self:start;display:block}
+.foot-logo img{width:156px;height:156px}
+.foot-brand p{font-size:.95rem}
+.foot h4{margin-bottom:18px;font:500 .7rem/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.foot ul{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.foot ul a{color:var(--white);text-decoration:none;transition:color .2s}
+.foot ul a:hover{color:var(--gold-soft)}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line-dark);font-size:.84rem}
+@media (max-width:719px){.foot{padding-bottom:116px}}
+
+/* floating WhatsApp on phones */
+.fab{position:fixed;z-index:45;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 22px;border:1px solid var(--gold);border-radius:999px;background:var(--forest);color:var(--white);text-decoration:none;font:500 .72rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;box-shadow:0 16px 36px -10px rgba(0,0,0,.5)}
+.fab svg{width:20px;height:20px;color:var(--gold)}
+.fab{transition:opacity .3s ease,transform .3s ease}
+.fab.is-hidden{opacity:0;transform:translateY(18px);pointer-events:none}
+@media (min-width:720px){.fab{display:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .shot:hover img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-clock" viewBox="0 0 28 28"><circle cx="14" cy="14" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M14 8v6.2l4 2.4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5Z"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M9 10.5h6M9 13.5h4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5v15l12.5-7.5z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 28 28"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M8 25V4M8 5h12l-3 4 3 4H8"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M4 25h20"/></symbol>
+  <symbol id="i-house" viewBox="0 0 28 28"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" d="M4 13 14 5l10 8M6.5 11.5V24h15V11.5"/><path fill="none" stroke="currentColor" stroke-width="1.4" d="M11.5 24v-6.5h5V24"/></symbol>
+  <symbol id="i-hills" viewBox="0 0 28 28"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" d="M2 22 10 10l5 6.5L19 12l7 10z"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M2 25h24"/></symbol>
+  <symbol id="i-road" viewBox="0 0 28 28"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M9 25 12.5 4M19 25 15.5 4"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="2.5 3" d="M14 24V6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<header class="bar on-dark">
+  <div class="wrap bar-in">
+    <a class="brand" href="#inicio" aria-label="KC Venta de Terrenos, ir al inicio">
+      <img src="media/logo-kc.png" alt="" width="64" height="64">
+      <span class="brand-name" aria-hidden="true"><b>KC</b><small>Venta de terrenos</small></span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#propiedad">La propiedad</a>
+      <a href="#videos">Recorrido</a>
+      <a href="#fotos">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="bar-actions">
+      <a class="btn btn-ghost-light btn-book" href="#cita">Agendar visita</a>
+      <a class="btn btn-light btn-wa" data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Abrir menú"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <div class="wrap">
+      <a class="mlink" href="#propiedad">La propiedad<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="mlink" href="#videos">Recorrido en video<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="mlink" href="#fotos">Galería<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="mlink" href="#ubicacion">Ubicación<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-light" href="#cita"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Agendar visita</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero on-dark" id="inicio">
+    <div class="hero-media">
+      <picture>
+        <source media="(max-width: 719px)" srcset="media/hero-m.jpg">
+        <img src="media/hero-hd.jpg" alt="Vista del terreno: pastizal abierto con árboles y los cerros al fondo" fetchpriority="high">
+      </picture>
+      <video id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </div>
+    <div class="hero-tag-row wrap"><span class="hero-tag"><i></i>Imágenes reales del terreno</span></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="eyebrow"><span>Terrenos en venta<span class="eb-extra"> · Visitas con cita</span></span></span>
+        <h1>Construye tu patrimonio con <em>vista al valle</em></h1>
+        <p class="hero-sub">Lotes de 8 × 15 m a 5 minutos del Circuito Exterior Mexiquense. Recórrelos aquí con videos y fotografías reales, y agenda tu visita por WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#cita"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Agendar visita</a>
+          <a class="btn btn-ghost-light" data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Solicitar información</a>
+        </div>
+        <p class="hero-contact">WhatsApp <b>55&nbsp;8522&nbsp;7440</b></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ledger">
+    <div class="wrap">
+      <div class="ledger-card">
+        <div class="ledger-head"><span class="eyebrow">Lo esencial del terreno</span></div>
+        <ul class="ledger-list">
+          <li><svg aria-hidden="true"><use href="#i-flag"/></svg><b>Lotes delimitados</b><span>Marcados con estacas.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-house"/></svg><b>Zona con casas</b><span>Construcciones ya levantadas alrededor.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-hills"/></svg><b>Vista a los cerros</b><span>Horizonte abierto hacia el valle.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-road"/></svg><b>Acceso por San Vicente y por Coatepec Centro</b><span>A 5 minutos del Circuito Exterior Mexiquense.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="propiedad">
+    <div class="wrap prop">
+      <div class="prop-copy">
+        <span class="eyebrow">La propiedad</span>
+        <h2 class="h2">Conócelo antes de visitarlo</h2>
+        <p class="lead">Grabamos el terreno para que lo recorras desde tu celular: los lotes marcados, la vista desde la loma y la zona que lo rodea.</p>
+        <p class="muted">Lotes de 8 × 15 m con $15,000 de enganche y mensualidades congeladas de $3,000. Resuelve tus dudas directamente por WhatsApp.</p>
+        <a class="link-arrow" href="#videos">Ver recorrido en video<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <article class="listing" aria-labelledby="listingTitle">
+        <div class="listing-media">
+          <img src="media/propiedad.jpg" alt="Terreno abierto con pastizal, árboles y un cerro al fondo" loading="lazy">
+          <span class="badge">En venta</span>
+          <span class="media-chip"><svg aria-hidden="true"><use href="#i-play"/></svg>6 videos del recorrido</span>
+        </div>
+        <div class="listing-body">
+          <div class="listing-title">
+            <span class="eyebrow">Venta de terrenos</span>
+            <h3 id="listingTitle">Terrenos con vista al valle</h3>
+            <p class="listing-loc"><svg aria-hidden="true"><use href="#i-pin"/></svg>A 5 minutos del Circuito Exterior Mexiquense</p>
+          </div>
+          <div class="price">
+            <span class="price-label">Precio</span>
+            <p class="price-value">$350,000 <small>MXN</small></p>
+          </div>
+          <dl class="spec">
+            <div><dt>Enganche</dt><dd>$15,000</dd></div>
+            <div><dt>Mensualidad</dt><dd>$3,000</dd></div>
+            <div><dt>Frente</dt><dd>8 m</dd></div>
+            <div><dt>Fondo</dt><dd>15 m</dd></div>
+            <div><dt>Superficie</dt><dd>120 m²</dd></div>
+            <div><dt>Forma de pago</dt><dd>Mensualidades congeladas</dd></div>
+            <div><dt>Visitas</dt><dd>Con cita previa</dd></div>
+            <div><dt>Ubicación</dt><dd><a href="https://maps.app.goo.gl/daC6epcwwuKgx7Q3A?g_st=ic" target="_blank" rel="noopener">Ver en Google Maps</a></dd></div>
+          </dl>
+          <div class="listing-actions">
+            <a class="btn btn-forest" data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Solicitar información</a>
+            <a class="btn btn-line" href="#cita">Agendar visita</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section dark on-dark" id="videos">
+    <div class="wrap">
+      <div class="sec-head split">
+        <div class="sec-head-title">
+          <span class="eyebrow">Recorrido en video</span>
+          <h2 class="h2">Recorre el terreno desde donde estés</h2>
+        </div>
+        <p class="lead muted">Seis tomas grabadas en el lugar, 2:41 en total. Elige cualquier toma de la lista para verla.</p>
+      </div>
+      <div class="tour">
+        <div class="player">
+          <div class="screen">
+            <video id="player" controls playsinline preload="metadata"></video>
+          </div>
+          <div class="now">
+            <div class="now-top"><span id="nowNum"></span><span id="nowDur"></span></div>
+            <h3 id="nowTitle"></h3>
+            <p id="nowDesc"></p>
+          </div>
+        </div>
+        <div class="tour-list">
+          <ol class="playlist" id="playlist" aria-label="Lista de videos"></ol>
+          <p class="swipe-hint">Desliza para ver más tomas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fotos">
+    <div class="wrap">
+      <div class="sec-head split">
+        <div class="sec-head-title">
+          <span class="eyebrow">Galería</span>
+          <h2 class="h2">Fotografías del terreno</h2>
+        </div>
+        <p class="muted">Toca cualquier imagen para verla en grande.</p>
+      </div>
+      <div class="gallery">
+        <button class="shot g-a" type="button" data-full="media/foto-panoramica-xl.jpg" data-caption="Vista panorámica del terreno" aria-label="Ampliar: vista panorámica del terreno"><img src="media/foto-panoramica.jpg" alt="Vista panorámica del terreno con pastizal, árboles y casas alrededor" loading="lazy"><span class="shot-cap">Vista panorámica</span></button>
+        <button class="shot g-b" type="button" data-full="media/foto-magueyes-1-xl.jpg" data-caption="Magueyes en la loma, con los cerros al fondo" aria-label="Ampliar: magueyes en la loma"><img src="media/foto-magueyes-1.jpg" alt="Magueyes en la loma con vista al valle y a los cerros" loading="lazy"><span class="shot-cap">Magueyes en la loma</span></button>
+        <button class="shot g-e" type="button" data-full="media/foto-magueyes-2-xl.jpg" data-caption="Vista desde la loma" aria-label="Ampliar: vista desde la loma"><img src="media/foto-magueyes-2.jpg" alt="Magueyes en primer plano y el terreno abierto al fondo" loading="lazy"><span class="shot-cap">Vista desde la loma</span></button>
+        <button class="shot g-c" type="button" data-full="media/galeria-cerros.jpg" data-caption="Vista hacia los cerros" aria-label="Ampliar: vista hacia los cerros"><img src="media/galeria-cerros.jpg" alt="Terreno con estacas, un árbol y los cerros al fondo" loading="lazy"><span class="shot-cap">Vista hacia los cerros</span></button>
+        <button class="shot g-f" type="button" data-full="media/galeria-estacas.jpg" data-caption="Lotes delimitados con estacas" aria-label="Ampliar: lotes delimitados con estacas"><img src="media/galeria-estacas.jpg" alt="Estacas que delimitan los lotes, con un árbol y los cerros al fondo" loading="lazy"><span class="shot-cap">Lotes delimitados</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="band on-dark" aria-labelledby="bandTitle">
+    <div class="band-media"><img src="media/banda.jpg" alt="" loading="lazy"></div>
+    <div class="wrap band-in">
+      <div class="band-copy">
+        <span class="eyebrow">Visitas con cita previa</span>
+        <h2 class="h2" id="bandTitle">Ven a conocerlo en persona</h2>
+        <p class="lead muted">Agenda tu cita por WhatsApp y te acompañamos a recorrer el terreno.</p>
+        <div class="band-actions">
+          <a class="btn btn-light" href="#cita"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Agendar visita</a>
+          <a class="btn btn-ghost-light" data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mist" id="ubicacion">
+    <div class="wrap loc">
+      <div class="loc-copy">
+        <span class="eyebrow">Ubicación</span>
+        <h2 class="h2">Cómo llegar</h2>
+        <p class="lead">El terreno está a 5 minutos del Circuito Exterior Mexiquense, con acceso por San Vicente y por Coatepec Centro. Abre la ubicación en Google Maps para ver la ruta exacta desde donde estés.</p>
+        <div class="loc-actions">
+          <a class="btn btn-forest" href="https://maps.app.goo.gl/daC6epcwwuKgx7Q3A?g_st=ic" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Abrir en Google Maps</a>
+        </div>
+      </div>
+      <div class="access">
+        <span class="eyebrow">Accesos y conexión</span>
+        <ul class="access-list">
+          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>Circuito Exterior Mexiquense</b><span>A 5 minutos del terreno</span></div></li>
+          <li><svg aria-hidden="true"><use href="#i-road"/></svg><div><b>San Vicente</b><span>Acceso al terreno</span></div></li>
+          <li><svg aria-hidden="true"><use href="#i-road"/></svg><div><b>Coatepec Centro</b><span>Acceso al terreno</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section book-band on-dark" id="cita">
+    <div class="wrap book">
+      <div class="book-copy">
+        <span class="eyebrow">Agenda tu visita</span>
+        <h2 class="h2">Agenda una cita para conocer el terreno</h2>
+        <p class="lead muted">También puedes preguntar por el enganche, las mensualidades congeladas o cualquier otra duda.</p>
+        <ol class="steps">
+          <li><div><b>Elige día y horario</b><span>Llena los datos del formulario. Solo toma un minuto.</span></div></li>
+          <li><div><b>Envía el mensaje por WhatsApp</b><span>Se abre WhatsApp con tu mensaje ya escrito. Solo dale enviar.</span></div></li>
+          <li><div><b>Confirmamos tu cita</b><span>Te respondemos para confirmar y te acompañamos a recorrer el terreno.</span></div></li>
+        </ol>
+        <div class="contact">
+          <span class="eyebrow">WhatsApp</span>
+          <div class="contact-row">
+            <output id="num">55 8522 7440</output>
+            <button class="btn btn-ghost-light" type="button" id="copyNum">Copiar número</button>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-card" id="bookForm" novalidate>
+        <div class="form-head">
+          <h3>Solicitud de visita</h3>
+          <p>Tu mensaje se enviará por WhatsApp al 55&nbsp;8522&nbsp;7440.</p>
+        </div>
+        <div class="field">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej. María López">
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="fecha">Día de la visita</label>
+            <input id="fecha" name="fecha" type="date">
+          </div>
+          <div class="field">
+            <label for="horario">Horario</label>
+            <select id="horario" name="horario">
+              <option value="Por la mañana">Por la mañana</option>
+              <option value="Al mediodía">Al mediodía</option>
+              <option value="Por la tarde">Por la tarde</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="comentario">Comentario <small>(opcional)</small></label>
+          <textarea id="comentario" name="comentario" placeholder="Ej. Me interesa un lote. ¿Puedo visitarlo este fin de semana?"></textarea>
+        </div>
+        <div class="field">
+          <span class="label">Así se enviará tu mensaje</span>
+          <div class="preview" id="preview" aria-live="polite"></div>
+        </div>
+        <a class="btn btn-forest" id="sendWa" href="https://wa.me/525585227440" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Enviar por WhatsApp</a>
+        <p class="fine">Si WhatsApp no se abre, escríbenos al 55&nbsp;8522&nbsp;7440.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="foot-logo" href="#inicio" aria-label="KC Venta de Terrenos, ir al inicio"><img src="media/logo-kc.png" alt="" width="156" height="156" loading="lazy"></a>
+        <p>KC Venta de Terrenos. Lotes de 8 × 15 m a 5 minutos del Circuito Exterior Mexiquense. Información y citas por WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="#propiedad">La propiedad</a></li>
+          <li><a href="#videos">Recorrido en video</a></li>
+          <li><a href="#fotos">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#cita">Agendar visita</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener">WhatsApp 55&nbsp;8522&nbsp;7440</a></li>
+          <li><a href="https://maps.app.goo.gl/daC6epcwwuKgx7Q3A?g_st=ic" target="_blank" rel="noopener">Ver ubicación en Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>KC Venta de Terrenos</span>
+      <span>Imágenes y videos reales del terreno</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" data-wa="info" href="https://wa.me/525585227440" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+
+<dialog class="lb" id="lb" aria-label="Imagen ampliada">
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-close" type="button" id="lbClose" aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+</dialog>
+
+<script>
+(function(){
+  var WA = '525585227440';
+  function waLink(text){ return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(text); }
+  var INFO = 'Hola, vi la página de los terrenos y me gustaría más información.';
+  document.querySelectorAll('[data-wa="info"]').forEach(function(a){ a.href = waLink(INFO); });
+  var reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function safePlay(v){ try { var p = v.play(); if (p && p.catch) p.catch(function(){}); } catch(e){} }
+
+  /* ---------- mobile menu ---------- */
+  var menuBtn = document.getElementById('menuBtn');
+  var mnav = document.getElementById('mnav');
+  function setMenu(open){
+    mnav.hidden = !open;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    menuBtn.querySelector('use').setAttribute('href', open ? '#i-close' : '#i-menu');
+  }
+  menuBtn.addEventListener('click', function(){ setMenu(mnav.hidden); });
+  mnav.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !mnav.hidden){ setMenu(false); menuBtn.focus(); } });
+  window.addEventListener('resize', function(){ if (window.innerWidth >= 1080 && !mnav.hidden) setMenu(false); });
+
+  /* ---------- hero video (photo stays underneath until it plays) ---------- */
+  var hero = document.getElementById('heroVideo');
+  if (!reduceMotion){
+    var wide = matchMedia('(min-width: 720px)').matches;
+    hero.muted = true;
+    hero.addEventListener('playing', function(){ hero.classList.add('is-playing'); });
+    hero.src = wide ? 'media/hero-hd.mp4' : 'media/hero-m.mp4';
+    safePlay(hero);
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting) safePlay(hero); else hero.pause(); });
+      }).observe(hero.parentNode);
+    }
+  }
+
+  /* ---------- floating WhatsApp: only once the cover is behind you, and not over the booking form ---------- */
+  var fab = document.querySelector('.fab');
+  if (fab && 'IntersectionObserver' in window){
+    var heroOn = true, bookOn = false;
+    var updFab = function(){
+      var hide = heroOn || bookOn;
+      fab.classList.toggle('is-hidden', hide);
+      fab.tabIndex = hide ? -1 : 0;
+    };
+    updFab();
+    var fabObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.target.id === 'inicio') heroOn = en.intersectionRatio > 0.3;
+        else bookOn = en.intersectionRatio > 0.15;
+      });
+      updFab();
+    }, {threshold:[0, .15, .3, .5]});
+    fabObs.observe(document.getElementById('inicio'));
+    fabObs.observe(document.getElementById('cita'));
+  }
+
+  /* ---------- video tour ---------- */
+  var clips = [
+    {f:'panoramica-1', t:'Recorrido de 360°', d:'Vuelta completa desde dentro del terreno: los lotes, los árboles y la loma.', s:48.9},
+    {f:'panoramica-2', t:'Vista amplia del predio', d:'El terreno completo con las casas vecinas al fondo.', s:36.2},
+    {f:'colindancias', t:'Lotes marcados', d:'Estacas que delimitan los lotes.', s:26.8},
+    {f:'vista-norte', t:'Vista desde lo alto', d:'Toma corta del terreno y la zona de casas.', s:6.2},
+    {f:'ladera-1', t:'Desde la loma', d:'Magueyes y vista abierta al valle.', s:25.7, v:true},
+    {f:'ladera-2', t:'Panorámica desde la loma', d:'Giro desde la loma hacia los cerros.', s:17.0, v:true}
+  ];
+  function pad(n){ return String(n).padStart(2, '0'); }
+  function mmss(s){ s = Math.round(s); return Math.floor(s / 60) + ':' + pad(s % 60); }
+
+  var player = document.getElementById('player');
+  var list = document.getElementById('playlist');
+  var nowTitle = document.getElementById('nowTitle');
+  var nowDesc = document.getElementById('nowDesc');
+  var nowNum = document.getElementById('nowNum');
+  var nowDur = document.getElementById('nowDur');
+  var current = -1;
+
+  clips.forEach(function(c, i){
+    var li = document.createElement('li');
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'clip'; b.dataset.i = i;
+    b.innerHTML =
+      '<span class="thumb"><img src="media/' + c.f + '.jpg" alt="" loading="lazy">' +
+      (c.v ? '<span class="vert">Vertical</span>' : '') +
+      '<span class="dur">' + mmss(c.s) + '</span></span>' +
+      '<span class="clip-text"><span class="clip-num">Toma ' + pad(i + 1) + '</span><b></b><span class="desc"></span></span>';
+    b.querySelector('b').textContent = c.t;
+    b.querySelector('.desc').textContent = c.d;
+    b.addEventListener('click', function(){ select(i, true); });
+    li.appendChild(b); list.appendChild(li);
+  });
+
+  function select(i, play){
+    if (i === current && play){ safePlay(player); return; }
+    current = i;
+    var c = clips[i];
+    player.poster = 'media/' + c.f + '.jpg';
+    player.src = 'media/' + c.f + '.mp4';
+    player.setAttribute('aria-label', 'Video: ' + c.t);
+    nowTitle.textContent = c.t;
+    nowDesc.textContent = c.d;
+    nowNum.textContent = 'Toma ' + pad(i + 1) + ' de ' + pad(clips.length);
+    nowDur.textContent = mmss(c.s);
+    list.querySelectorAll('.clip').forEach(function(el){ el.setAttribute('aria-current', String(Number(el.dataset.i) === i)); });
+    // keep the active take in view inside the swipeable list without moving the page
+    if (list.scrollWidth > list.clientWidth + 4){
+      var li = list.children[i];
+      try { list.scrollTo({left: li.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth'}); } catch(e){ list.scrollLeft = li.offsetLeft; }
+    }
+    if (play) safePlay(player);
+  }
+  select(0, false);
+  player.addEventListener('ended', function(){ if (current < clips.length - 1) select(current + 1, true); });
+
+  /* ---------- gallery lightbox ---------- */
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  function closeLb(){ try { lb.close(); } catch(e){ lb.removeAttribute('open'); } }
+  document.querySelectorAll('.shot').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      lbImg.src = btn.dataset.full;
+      lbImg.alt = btn.querySelector('img').alt;
+      lbCap.textContent = btn.dataset.caption || '';
+      try { lb.showModal(); } catch(e){ lb.setAttribute('open', ''); }
+    });
+  });
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLb(); });
+
+  /* ---------- booking form → WhatsApp message ---------- */
+  var form = document.getElementById('bookForm');
+  var nombre = document.getElementById('nombre');
+  var fecha = document.getElementById('fecha');
+  var horario = document.getElementById('horario');
+  var comentario = document.getElementById('comentario');
+  var preview = document.getElementById('preview');
+  var send = document.getElementById('sendWa');
+
+  function iso(d){ return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  fecha.min = iso(new Date());
+
+  function niceDate(v){
+    if (!v) return '';
+    var p = v.split('-'); var d = new Date(+p[0], +p[1] - 1, +p[2]);
+    try { return d.toLocaleDateString('es-MX', {weekday:'long', day:'numeric', month:'long'}); }
+    catch(e){ return v; }
+  }
+  function buildMessage(){
+    var lines = ['Hola, vi la página de los terrenos y me gustaría agendar una cita para conocerlos.'];
+    var n = nombre.value.trim(); if (n) lines.push('Nombre: ' + n);
+    var f = niceDate(fecha.value); lines.push('Día: ' + (f || 'por definir'));
+    lines.push('Horario: ' + horario.value.toLowerCase());
+    var c = comentario.value.trim(); if (c) lines.push('Comentario: ' + c);
+    return lines.join('\n');
+  }
+  function refresh(){
+    var msg = buildMessage();
+    preview.textContent = msg;
+    send.href = waLink(msg);
+  }
+  form.addEventListener('input', refresh);
+  form.addEventListener('change', refresh);
+  form.addEventListener('submit', function(e){ e.preventDefault(); refresh(); send.focus(); });
+  refresh();
+
+  /* ---------- copy number ---------- */
+  var copyBtn = document.getElementById('copyNum');
+  copyBtn.addEventListener('click', function(){
+    var num = '5585227440';
+    function selectText(){
+      try {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('num'));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      } catch(e){}
+      copyBtn.textContent = 'Número seleccionado';
+    }
+    try {
+      navigator.clipboard.writeText(num).then(function(){
+        copyBtn.textContent = 'Copiado';
+        setTimeout(function(){ copyBtn.textContent = 'Copiar número'; }, 2000);
+      }, selectText);
+    } catch(e){ selectText(); }
+  });
+})();
+</script>
+</body>
+</html>
