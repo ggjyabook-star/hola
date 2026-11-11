@@ -338,6 +338,16 @@ a{color:inherit}
 .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line-dark);font-size:.84rem}
 @media (max-width:719px){.foot{padding-bottom:116px}}
 
+/* notas teaser */
+.notes{display:grid;gap:clamp(20px,2.4vw,28px)}
+@media (min-width:900px){.notes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.note{display:grid;gap:12px;align-content:start;padding:26px 24px 28px;border:1px solid var(--line);border-top:3px solid var(--gold);text-decoration:none;color:var(--ink);transition:box-shadow .3s}
+.note:hover{box-shadow:0 30px 60px -40px rgba(10,31,22,.5)}
+.note small{font:500 .64rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.note b{font:600 1.5rem/1.15 var(--serif)}
+.note span{font-size:.95rem;color:var(--muted)}
+.notes-more{margin-top:clamp(28px,3vw,40px)}
+
 /* floating WhatsApp on phones */
 .fab{position:fixed;z-index:45;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 22px;border:1px solid var(--gold);border-radius:999px;background:var(--forest);color:var(--white);text-decoration:none;font:500 .72rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;box-shadow:0 16px 36px -10px rgba(0,0,0,.5)}
 .fab svg{width:20px;height:20px;color:var(--gold)}
@@ -379,6 +389,7 @@ a{color:inherit}
       <a href="#videos">Recorrido</a>
       <a href="#fotos">Galería</a>
       <a href="#ubicacion">Ubicación</a>
+      <a href="notas/">Notas</a>
     </nav>
     <div class="bar-actions">
       <a class="btn btn-ghost-light btn-book" href="#cita">Agendar visita</a>
@@ -392,6 +403,7 @@ a{color:inherit}
       <a class="mlink" href="#videos">Recorrido en video<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <a class="mlink" href="#fotos">Galería<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <a class="mlink" href="#ubicacion">Ubicación<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="mlink" href="notas/">Notas para comprar seguro<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <a class="btn btn-light" href="#cita"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Agendar visita</a>
     </div>
   </div>
@@ -563,6 +575,24 @@ a{color:inherit}
     </div>
   </section>
 
+  <section class="section" id="notas">
+    <div class="wrap">
+      <div class="sec-head split">
+        <div class="sec-head-title">
+          <span class="eyebrow">Notas para comprar seguro</span>
+          <h2 class="h2">Lo que dice la ley antes de comprar tu terreno</h2>
+        </div>
+        <p class="muted">Guías sencillas sobre ejidos, escrituras, mensualidades, gastos notariales y permisos en el Estado de México.</p>
+      </div>
+      <div class="notes">
+        <a class="note" href="notas/terreno-ejidal-o-propiedad-privada/"><small>Ley Agraria</small><b>¿Terreno ejidal o propiedad privada?</b><span>Cómo distinguirlos y qué documentos pedir.</span></a>
+        <a class="note" href="notas/comprar-terreno-a-mensualidades/"><small>Contratos</small><b>Comprar a mensualidades: lo que tu contrato debe decir</b><span>Precio total, plazos, atrasos y escritura.</span></a>
+        <a class="note" href="notas/documentos-antes-de-dar-el-enganche/"><small>Checklist</small><b>10 documentos antes de dar el enganche</b><span>Una lista para llevar a tu visita.</span></a>
+      </div>
+      <div class="notes-more"><a class="link-arrow" href="notas/">Ver todas las notas<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </section>
+
   <section class="section book-band on-dark" id="cita">
     <div class="wrap book">
       <div class="book-copy">
@@ -636,6 +666,7 @@ a{color:inherit}
           <li><a href="#fotos">Galería</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#cita">Agendar visita</a></li>
+          <li><a href="notas/">Notas para comprar seguro</a></li>
         </ul>
       </div>
       <div>
